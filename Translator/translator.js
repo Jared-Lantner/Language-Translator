@@ -23,3 +23,6 @@ function translateButton(event) {
 function callTranslate(event) {
 	open('translate.google.com/?sl=en&tl=en&op=translate')
 }
+
+xapi.event.on('UserInterface Extentions Panel Clicked', translateButton);
+xapi.event.on('UserInterface Message TextInput Response', callTranslate);  

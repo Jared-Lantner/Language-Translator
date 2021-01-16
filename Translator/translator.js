@@ -21,7 +21,7 @@ function translateButton(event) {
 
 //Use google translate to perform the requested translation.  
 function callTranslate(event) {
-	open('translate.google.com/?sl=en&tl=en&op=translate')
+	open(`translate.google.com/?sl=${userInput.fromLanguage}&tl=${userInput.toLanguage}&text=${userInput.text}&op=translate`)
 }
 
 xapi.event.on('UserInterface Extentions Panel Clicked', translateButton);
